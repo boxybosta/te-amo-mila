@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botão de Coração</title>
+    <title>Botão Circular</title>
     <style>
         body {
             display: flex;
@@ -13,29 +13,31 @@
             background-color: #f4f4f4;
             margin: 0;
         }
-        .heart-button {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            background-color: red;
+        .button {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 120px;
+            height: 120px;
+            background-color: red;
             color: white;
             font-size: 16px;
             font-weight: bold;
             text-decoration: none;
             border-radius: 50%;
-            transform: rotate(-45deg);
-            transition: 0.3s;
+            text-align: center;
+            transition: background-color 0.3s;
         }
-        .heart-button::before,
-        .heart-button::after {
-            content: "";
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            border-radius: 50%;
+        .button:hover {
+            background-color: darkred;
         }
-        .
+    </style>
+</head>
+<body>
+    <a href="https://docs.google.com/document/d/1bt_3fLPUqgECly5HLfdCKRbzfvf79omwPQIHIpxUGGM/edit?tab=t.0" 
+       class="button" target="_blank">
+        Abrir Presente ❤️
+    </a>
+</body>
+</html>
+
