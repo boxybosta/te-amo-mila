@@ -1,13 +1,11 @@
 git clone https://github.com/boxbosta/te-amo-mila.git
-cd te-amo-mila
-
 
 <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botão Centralizado</title>
+    <title>Botão de Coração</title>
     <style>
         body {
             display: flex;
@@ -18,21 +16,46 @@ cd te-amo-mila
             margin: 0;
         }
         .button {
+            display: inline-block;
             padding: 15px 30px;
             font-size: 18px;
             color: white;
-            background-color: #007bff;
+            background-color: red;
             border: none;
-            border-radius: 5px;
+            border-radius: 50px;
             cursor: pointer;
             text-decoration: none;
+            position: relative;
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            line-height: 120px;
+            font-weight: bold;
+            transition: 0.3s;
         }
         .button:hover {
-            background-color: #0056b3;
+            background-color: darkred;
+        }
+        .button::before,
+        .button::after {
+            content: "";
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .button::before {
+            top: -60px;
+            left: 0;
+        }
+        .button::after {
+            left: 60px;
+            top: 0;
         }
     </style>
 </head>
 <body>
-    <a href="https://te-amo-mila.com" class="button">Clique Aqui</a>
+    <a href="https://te-amo-mila.com" class="button">Abrir Presente ❤️</a>
 </body>
 </html>
